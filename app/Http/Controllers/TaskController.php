@@ -76,9 +76,7 @@ class TaskController extends Controller
      */
     public function destroy(Task $task)
     {
-
         return $this->isNotAuthorize($task) ? $this->isNotAuthorize($task) :  $task->delete();;
-
     }
 
     private function isNotAuthorize($task){

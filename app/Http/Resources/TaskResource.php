@@ -24,8 +24,8 @@ class TaskResource extends JsonResource
                 'updated_at' => $this->updated_at,
             ],
             'relationships' => [
-                // 'id' => (string)$this->user->id,
-                // 'user name' => $this->user->name
+                'id' => (string)$this->user->id,
+                'name' => $this->user->name
             ]
         ];
     }
